@@ -70,7 +70,7 @@ class CalculatorViewModel: ViewModel() {
                 is CalculatorOperation.Subtract -> number1 - number2
                 is CalculatorOperation.Multiply -> number1 * number2
                 is CalculatorOperation.PlusOrMinus -> number1 - number2
-                is CalculatorOperation.Percentage -> number1 % number2
+                is CalculatorOperation.Percentage -> number1 /100 * number2
                 is CalculatorOperation.Divide -> number1 / number2
                 null -> return
             }
